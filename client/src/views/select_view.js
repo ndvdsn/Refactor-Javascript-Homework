@@ -15,7 +15,7 @@ class SelectView{
     this.element.addEventListener('change', (evt) => {
       const selectedIndex = evt.target.value;
 
-      PubSub.publish('SelectView:change', selectedIndex);
+      PubSub.publish('SelectView:Change', selectedIndex);
       // console.log(selectedIndex);
     });
   };

@@ -13,7 +13,7 @@ class InstrumentFamilyView{
     })
   };
 
-  render({name = family.name, description = family.description, instruments = family.instruments}){
+  render({name, description, instruments}){
 
     this.container.innerHTML = '';
 

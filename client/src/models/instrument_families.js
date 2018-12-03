@@ -11,6 +11,7 @@ class InstrumentFamilies {
     // console.log(this.data);
     PubSub.subscribe('SelectView:Change', (evt) => {
       const selectedIndex = evt.detail;
+      console.log(selectedIndex);
       this.publishFamilyDetail(selectedIndex);
     });
   };
